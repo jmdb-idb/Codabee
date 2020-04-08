@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3860AD243DFD160099808C /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AC243DFD160099808C /* Menu.storyboard */; };
+		DA3860AF243DFD400099808C /* Actus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AE243DFD400099808C /* Actus.storyboard */; };
+		DA3860B1243DFD710099808C /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860B0243DFD710099808C /* Videos.storyboard */; };
+		DA3860B3243DFD8E0099808C /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860B2243DFD8E0099808C /* Forum.storyboard */; };
 		DACD7C7B243DD050003E4FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD7C7A243DD050003E4FDD /* AppDelegate.swift */; };
 		DACD7C7D243DD050003E4FDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD7C7C243DD050003E4FDD /* SceneDelegate.swift */; };
-		DACD7C7F243DD050003E4FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD7C7E243DD050003E4FDD /* ViewController.swift */; };
-		DACD7C82243DD050003E4FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACD7C80243DD050003E4FDD /* Main.storyboard */; };
 		DACD7C85243DD050003E4FDD /* Codabee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACD7C83243DD050003E4FDD /* Codabee.xcdatamodeld */; };
 		DACD7C87243DD051003E4FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACD7C86243DD051003E4FDD /* Assets.xcassets */; };
 		DACD7C8A243DD051003E4FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACD7C88243DD051003E4FDD /* LaunchScreen.storyboard */; };
@@ -22,11 +24,13 @@
 		9079E5347D87EEFF9D4DF92D /* Pods-Codabee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.debug.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C536B63AE006C46455FFD8 /* Pods-Codabee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.release.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.release.xcconfig"; sourceTree = "<group>"; };
 		DA3860A5243DE19A0099808C /* Codabee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Codabee.entitlements; sourceTree = "<group>"; };
+		DA3860AC243DFD160099808C /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		DA3860AE243DFD400099808C /* Actus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Actus.storyboard; sourceTree = "<group>"; };
+		DA3860B0243DFD710099808C /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
+		DA3860B2243DFD8E0099808C /* Forum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
 		DACD7C77243DD050003E4FDD /* Codabee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codabee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACD7C7A243DD050003E4FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACD7C7C243DD050003E4FDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DACD7C7E243DD050003E4FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DACD7C81243DD050003E4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DACD7C84243DD050003E4FDD /* Codabee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Codabee.xcdatamodel; sourceTree = "<group>"; };
 		DACD7C86243DD051003E4FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACD7C89243DD051003E4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,53 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA3860A6243DFBC40099808C /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				DACD7C88243DD051003E4FDD /* LaunchScreen.storyboard */,
+				DA3860AC243DFD160099808C /* Menu.storyboard */,
+				DA3860AE243DFD400099808C /* Actus.storyboard */,
+				DA3860B0243DFD710099808C /* Videos.storyboard */,
+				DA3860B2243DFD8E0099808C /* Forum.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		DA3860A7243DFC080099808C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA3860A8243DFC250099808C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA3860A9243DFC2E0099808C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA3860AA243DFC490099808C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DA3860AB243DFC750099808C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
 		DACD7C6E243DD050003E4FDD = {
 			isa = PBXGroup;
 			children = (
@@ -75,13 +126,16 @@
 		DACD7C79243DD050003E4FDD /* Codabee */ = {
 			isa = PBXGroup;
 			children = (
-				DA3860A5243DE19A0099808C /* Codabee.entitlements */,
 				DACD7C7A243DD050003E4FDD /* AppDelegate.swift */,
 				DACD7C7C243DD050003E4FDD /* SceneDelegate.swift */,
-				DACD7C7E243DD050003E4FDD /* ViewController.swift */,
-				DACD7C80243DD050003E4FDD /* Main.storyboard */,
+				DA3860A9243DFC2E0099808C /* Models */,
+				DA3860A8243DFC250099808C /* Views */,
+				DA3860A7243DFC080099808C /* Controllers */,
+				DA3860A6243DFBC40099808C /* StoryBoards */,
+				DA3860A5243DE19A0099808C /* Codabee.entitlements */,
 				DACD7C86243DD051003E4FDD /* Assets.xcassets */,
-				DACD7C88243DD051003E4FDD /* LaunchScreen.storyboard */,
+				DA3860AA243DFC490099808C /* resources */,
+				DA3860AB243DFC750099808C /* Plists */,
 				DACD7C8B243DD051003E4FDD /* Info.plist */,
 				DACD7C83243DD050003E4FDD /* Codabee.xcdatamodeld */,
 			);
@@ -156,9 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3860B3243DFD8E0099808C /* Forum.storyboard in Resources */,
+				DA3860AD243DFD160099808C /* Menu.storyboard in Resources */,
 				DACD7C8A243DD051003E4FDD /* LaunchScreen.storyboard in Resources */,
 				DACD7C87243DD051003E4FDD /* Assets.xcassets in Resources */,
-				DACD7C82243DD050003E4FDD /* Main.storyboard in Resources */,
+				DA3860B1243DFD710099808C /* Videos.storyboard in Resources */,
+				DA3860AF243DFD400099808C /* Actus.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACD7C7F243DD050003E4FDD /* ViewController.swift in Sources */,
 				DACD7C7B243DD050003E4FDD /* AppDelegate.swift in Sources */,
 				DACD7C7D243DD050003E4FDD /* SceneDelegate.swift in Sources */,
 				DACD7C85243DD050003E4FDD /* Codabee.xcdatamodeld in Sources */,
@@ -221,14 +277,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DACD7C80243DD050003E4FDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DACD7C81243DD050003E4FDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DACD7C88243DD051003E4FDD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
