@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,14 @@
 		DACD7C85243DD050003E4FDD /* Codabee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACD7C83243DD050003E4FDD /* Codabee.xcdatamodeld */; };
 		DACD7C87243DD051003E4FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACD7C86243DD051003E4FDD /* Assets.xcassets */; };
 		DACD7C8A243DD051003E4FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACD7C88243DD051003E4FDD /* LaunchScreen.storyboard */; };
+		EE5867273D80CE1EED975954 /* Pods_Codabee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94ADB213A2B7BEC3147833 /* Pods_Codabee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E94ADB213A2B7BEC3147833 /* Pods_Codabee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codabee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9079E5347D87EEFF9D4DF92D /* Pods-Codabee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.debug.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C536B63AE006C46455FFD8 /* Pods-Codabee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.release.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.release.xcconfig"; sourceTree = "<group>"; };
+		DA3860A5243DE19A0099808C /* Codabee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Codabee.entitlements; sourceTree = "<group>"; };
 		DACD7C77243DD050003E4FDD /* Codabee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codabee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACD7C7A243DD050003E4FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACD7C7C243DD050003E4FDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5867273D80CE1EED975954 /* Pods_Codabee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34FA6BB14E02485BA2E1891A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9079E5347D87EEFF9D4DF92D /* Pods-Codabee.debug.xcconfig */,
+				A6C536B63AE006C46455FFD8 /* Pods-Codabee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DACD7C6E243DD050003E4FDD = {
 			isa = PBXGroup;
 			children = (
 				DACD7C79243DD050003E4FDD /* Codabee */,
 				DACD7C78243DD050003E4FDD /* Products */,
+				34FA6BB14E02485BA2E1891A /* Pods */,
+				E7301BA1BA2141146ABAC2EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +75,7 @@
 		DACD7C79243DD050003E4FDD /* Codabee */ = {
 			isa = PBXGroup;
 			children = (
+				DA3860A5243DE19A0099808C /* Codabee.entitlements */,
 				DACD7C7A243DD050003E4FDD /* AppDelegate.swift */,
 				DACD7C7C243DD050003E4FDD /* SceneDelegate.swift */,
 				DACD7C7E243DD050003E4FDD /* ViewController.swift */,
@@ -70,6 +88,14 @@
 			path = Codabee;
 			sourceTree = "<group>";
 		};
+		E7301BA1BA2141146ABAC2EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E94ADB213A2B7BEC3147833 /* Pods_Codabee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DACD7C8E243DD051003E4FDD /* Build configuration list for PBXNativeTarget "Codabee" */;
 			buildPhases = (
+				7C991001C0FE6720386A5909 /* [CP] Check Pods Manifest.lock */,
 				DACD7C73243DD050003E4FDD /* Sources */,
 				DACD7C74243DD050003E4FDD /* Frameworks */,
 				DACD7C75243DD050003E4FDD /* Resources */,
+				7CBAC8674CD074E12CB8CB3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C991001C0FE6720386A5909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Codabee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CBAC8674CD074E12CB8CB3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codabee/Pods-Codabee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codabee/Pods-Codabee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Codabee/Pods-Codabee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DACD7C73243DD050003E4FDD /* Sources */ = {
@@ -286,8 +356,10 @@
 		};
 		DACD7C8F243DD051003E4FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9079E5347D87EEFF9D4DF92D /* Pods-Codabee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Codabee/Codabee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YGL5KB3NR;
 				INFOPLIST_FILE = Codabee/Info.plist;
@@ -297,6 +369,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.idb.Codabee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,8 +377,10 @@
 		};
 		DACD7C90243DD051003E4FDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C536B63AE006C46455FFD8 /* Pods-Codabee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Codabee/Codabee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YGL5KB3NR;
 				INFOPLIST_FILE = Codabee/Info.plist;
@@ -315,6 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.idb.Codabee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
