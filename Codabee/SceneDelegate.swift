@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Start without StoryBoard
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        //window?.rootViewController = ViewController()
+        window?.rootViewController = RootController()
         window?.makeKeyAndVisible()
     }
 

@@ -7,24 +7,38 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
-class RootController: UIViewController {
+
+class RootController: MenuContainerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Transition
+        transitionOptions = TransitionOptions(duration: 0.4, visibleContentWidth: 60)
+        
+        // MenuController
+        if  let menu  = getInitial(string: "Menu") as? MenuViewController {
+            menuViewController = menu
+        }
+        
+        // Contenu
+        contentViewControllers = [
+            getInitial(string: "Actus"),
+            getInitial(string: "Videos"),
+            getInitial(string: "Forum")
+        ]
+        
+        
+        // Sélectionner le 1er du contenu comme visible au départ
+        if contentViewControllers.count > 0 {
+            selectContentViewController(contentViewControllers.first!)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getInitial(string: String) -> UIViewController {
+        let storyboard = UIStoryboard(name: string, bundle: nil)
+        return storyboard.instantiateInitialViewController() ?? UIViewController()
     }
-    */
-
 }

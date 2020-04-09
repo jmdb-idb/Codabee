@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
-class ForumController: UIViewController {
+class ForumController: UIViewController, SideMenuItemContent {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Forum"
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -27,4 +28,8 @@ class ForumController: UIViewController {
     }
     */
 
+    @IBAction func showMenu(_ sender: Any) {
+        showSideMenu()
+    }
+    
 }

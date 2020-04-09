@@ -7,17 +7,15 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
-class ActuController: UITableViewController {
+
+class ActuController: UITableViewController, SideMenuItemContent {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Actualités"
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -87,4 +85,7 @@ class ActuController: UITableViewController {
     }
     */
 
+    @IBAction func showMenu(_ sender: Any) {
+        showSideMenu()
+    }
 }

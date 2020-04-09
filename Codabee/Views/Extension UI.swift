@@ -6,4 +6,24 @@
 //  Copyright © 2020 IDB. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+extension UITableView {
+    
+    func setup() {
+        backgroundColor = .clear
+        separatorStyle = .none
+        tableFooterView = UIView()
+    }
+}
+
+
+extension UITableViewCell {
+    
+    func setup() {
+        contentView.backgroundColor = .clear
+        backgroundColor = .clear
+        selectionStyle = .none
+    }
+}

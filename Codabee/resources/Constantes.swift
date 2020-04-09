@@ -6,4 +6,7 @@
 //  Copyright © 2020 IDB. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+let HONEY_COLOR = UIColor(red: 1, green: 195 / 255, blue: 11 / 255, alpha: 1)
+
