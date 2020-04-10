@@ -53,5 +53,4 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA0EEA9B243EFC8100CB1204 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EEA9A243EFC8100CB1204 /* MenuCell.swift */; };
+		DA18A3462440700400E41CC5 /* RoundIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3452440700400E41CC5 /* RoundIV.swift */; };
 		DA3860AD243DFD160099808C /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AC243DFD160099808C /* Menu.storyboard */; };
 		DA3860AF243DFD400099808C /* Actus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AE243DFD400099808C /* Actus.storyboard */; };
 		DA3860B1243DFD710099808C /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860B0243DFD710099808C /* Videos.storyboard */; };
@@ -34,6 +35,7 @@
 		9079E5347D87EEFF9D4DF92D /* Pods-Codabee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.debug.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C536B63AE006C46455FFD8 /* Pods-Codabee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codabee.release.xcconfig"; path = "Target Support Files/Pods-Codabee/Pods-Codabee.release.xcconfig"; sourceTree = "<group>"; };
 		DA0EEA9A243EFC8100CB1204 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		DA18A3452440700400E41CC5 /* RoundIV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundIV.swift; sourceTree = "<group>"; };
 		DA3860A5243DE19A0099808C /* Codabee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Codabee.entitlements; sourceTree = "<group>"; };
 		DA3860AC243DFD160099808C /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		DA3860AE243DFD400099808C /* Actus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Actus.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				DA0EEA99243EFB9100CB1204 /* TableViewCell */,
 				DAA4B619243F4BD000762CF5 /* Extension UI.swift */,
 				DAA4B61B243F4E7E00762CF5 /* CustomView.swift */,
+				DA18A3452440700400E41CC5 /* RoundIV.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				DACD7C7D243DD050003E4FDD /* SceneDelegate.swift in Sources */,
 				DAA4B61E243F4F9C00762CF5 /* Constantes.swift in Sources */,
 				DAA4B620243F540100762CF5 /* Nav.swift in Sources */,
+				DA18A3462440700400E41CC5 /* RoundIV.swift in Sources */,
 				DA3860BD243E12BC0099808C /* ForumController.swift in Sources */,
 				DAA4B61C243F4E7E00762CF5 /* CustomView.swift in Sources */,
 				DAA4B61A243F4BD000762CF5 /* Extension UI.swift in Sources */,
