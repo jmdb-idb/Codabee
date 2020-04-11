@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import SDWebImage
 
 
 extension UITableView {
     
-    func setup() {
+    func setup(color: UIColor) {
         backgroundColor = .clear
         separatorStyle = .none
         tableFooterView = UIView()
     }
 }
-
 
 extension UITableViewCell {
     
@@ -26,4 +26,12 @@ extension UITableViewCell {
         backgroundColor = .clear
         selectionStyle = .none
     }
+}
+
+extension UIImageView {
+    
+    func download(string: String) {
+        sd_setImage(with: URL(string: string), placeholderImage: BUMBLE_IMAGE, options: SDWebImageOptions.highPriority, completed: nil)
+    }
+
 }

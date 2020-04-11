@@ -22,7 +22,7 @@ class MenuController: MenuViewController {
         view.backgroundColor = .darkGray
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.setup()
+        tableView.setup(color: .clear)
         
     }
     
