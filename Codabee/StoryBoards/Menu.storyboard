@@ -80,7 +80,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="nameLbl" destination="5uj-Y2-EER" id="mkA-js-CQM"/>
+                                                    <outlet property="nameLbl" destination="5uj-Y2-EER" id="ZdV-DM-b6J"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

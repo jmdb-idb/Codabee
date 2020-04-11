@@ -16,8 +16,7 @@ class MenuCell: UITableViewCell {
         self.setup()
         nameLbl.text = string
     }
-    
-    
+
 }
 
 

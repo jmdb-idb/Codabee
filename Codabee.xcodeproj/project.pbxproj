@@ -15,6 +15,9 @@
 		DA3258062441B036008806DE /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3258052441B036008806DE /* WebController.swift */; };
 		DA3258082441B523008806DE /* LoadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3258072441B523008806DE /* LoadingImageView.swift */; };
 		DA32580A2441BB03008806DE /* Extensions Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3258092441BB03008806DE /* Extensions Type.swift */; };
+		DA32580C2441D9AB008806DE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32580B2441D9AB008806DE /* API.swift */; };
+		DA32580E2441F600008806DE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32580D2441F600008806DE /* Video.swift */; };
+		DA3258102441FEB2008806DE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA32580F2441FEB2008806DE /* WebKit.framework */; };
 		DA3860AD243DFD160099808C /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AC243DFD160099808C /* Menu.storyboard */; };
 		DA3860AF243DFD400099808C /* Actus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860AE243DFD400099808C /* Actus.storyboard */; };
 		DA3860B1243DFD710099808C /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3860B0243DFD710099808C /* Videos.storyboard */; };
@@ -48,6 +51,9 @@
 		DA3258052441B036008806DE /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		DA3258072441B523008806DE /* LoadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImageView.swift; sourceTree = "<group>"; };
 		DA3258092441BB03008806DE /* Extensions Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions Type.swift"; sourceTree = "<group>"; };
+		DA32580B2441D9AB008806DE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DA32580D2441F600008806DE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		DA32580F2441FEB2008806DE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		DA3860A5243DE19A0099808C /* Codabee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Codabee.entitlements; sourceTree = "<group>"; };
 		DA3860AC243DFD160099808C /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		DA3860AE243DFD400099808C /* Actus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Actus.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3258102441FEB2008806DE /* WebKit.framework in Frameworks */,
 				EE5867273D80CE1EED975954 /* Pods_Codabee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 				DA18A3472440A7B500E41CC5 /* Article.swift */,
 				DA18A3492440A8E700E41CC5 /* RSSParser.swift */,
 				DA3258092441BB03008806DE /* Extensions Type.swift */,
+				DA32580D2441F600008806DE /* Video.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA4B61D243F4F9C00762CF5 /* Constantes.swift */,
+				DA32580B2441D9AB008806DE /* API.swift */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 		E7301BA1BA2141146ABAC2EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA32580F2441FEB2008806DE /* WebKit.framework */,
 				1E94ADB213A2B7BEC3147833 /* Pods_Codabee.framework */,
 			);
 			name = Frameworks;
@@ -366,12 +376,14 @@
 				DACD7C7D243DD050003E4FDD /* SceneDelegate.swift in Sources */,
 				DA3258082441B523008806DE /* LoadingImageView.swift in Sources */,
 				DAA4B61E243F4F9C00762CF5 /* Constantes.swift in Sources */,
+				DA32580E2441F600008806DE /* Video.swift in Sources */,
 				DAA4B620243F540100762CF5 /* Nav.swift in Sources */,
 				DA18A3462440700400E41CC5 /* RoundIV.swift in Sources */,
 				DA3258062441B036008806DE /* WebController.swift in Sources */,
 				DA3860BD243E12BC0099808C /* ForumController.swift in Sources */,
 				DAA4B61C243F4E7E00762CF5 /* CustomView.swift in Sources */,
 				DAA4B61A243F4BD000762CF5 /* Extension UI.swift in Sources */,
+				DA32580C2441D9AB008806DE /* API.swift in Sources */,
 				DACD7C85243DD050003E4FDD /* Codabee.xcdatamodeld in Sources */,
 				DA18A34C2440BA8900E41CC5 /* ArticleCell.swift in Sources */,
 				DA3860B6243DFE4F0099808C /* RootController.swift in Sources */,

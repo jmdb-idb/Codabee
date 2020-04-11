@@ -8,12 +8,11 @@
 
 import UIKit
 
-class customView: UIView {
+class CustomView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,6 +29,6 @@ class customView: UIView {
         layer.shadowOffset = CGSize(width: -4, height: 4)
         layer.shadowRadius = 4
         layer.shadowOpacity = 0.65
-        
     }
+    
 }
