@@ -11,33 +11,37 @@ import InteractiveSideMenu
 
 class VideoController: UITableViewController, SideMenuItemContent {
     
+    
+    var videos = [Video]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Vidéos"
+        tableView.setup(color: HONEY_COLOR)
         APIHelper().getVideos { (vids) in
             DispatchQueue.main.async {
-                for v in vids {
-                    print (v.id)
-                }
+                self.videos = vids
+                self.tableView.reloadData()
             }
         }
-
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return videos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell") as? VideoCell {
+            cell.setup(videos[indexPath.row])
+            return cell
+        }
+        return UITableViewCell()
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 175
+    }
 
     /*
     // Override to support conditional editing of the table view.
