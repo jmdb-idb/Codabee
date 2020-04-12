@@ -43,6 +43,24 @@ class VideoController: UITableViewController, SideMenuItemContent {
         return 175
     }
 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Passer par l'étape YouTube
+//      let urlString = BASE_URL_VIDEO + videos[indexPath.row].id.videoId
+        // Directement dans la lecture de la vidéo choisie
+        let urlString = BASE_VIDEO_EMBED + videos[indexPath.row].id.videoId
+        performSegue(withIdentifier: "YouTube", sender: urlString)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "YouTube" {
+            if let controller = segue.destination as? WebController {
+                controller.urlString = sender as? String
+            }
+        }
+    }
+
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
